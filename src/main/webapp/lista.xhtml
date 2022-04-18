@@ -12,5 +12,32 @@
     <div style="text-align: center;">
     <h1>Lista de compras</h1>
     </div>
+
+    <h:form id="itemCadastro">
+
+        <h:panelGrid columns="3">
+
+            <h:outputText value="Item: "/>
+
+            <h:inputText id="item" />
+
+            <h:commandButton value="+"/>
+
+        </h:panelGrid>
+
+    </h:form>
+
+    <h:form id="listaItens">
+
+        <h:panelGrid columns="2">
+
+            <h:selectManyListbox id="listbox-itens" size="10" style="width: 300px"/>
+
+            <h:commandButton value="-"/>
+
+        </h:panelGrid>
+
+    </h:form>
+
 </h:body>
 </html>
